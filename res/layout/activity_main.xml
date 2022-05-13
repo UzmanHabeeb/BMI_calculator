@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#43909A"
+        android:text="BMI CALCULATOR"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bmi"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_marginTop="50dp"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bmi" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bmi"
+        android:background="@drawable/input_design"
+        android:hint="Age"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="25dp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/age"
+        android:background="@drawable/input_design"
+        android:hint="Height(cm)"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/height"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_design"
+        android:hint="Weight(kg)"
+        android:padding="15dp"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="25dp">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weight"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:text="Calculate">
+
+    </Button>
+
+</RelativeLayout>
